@@ -1,0 +1,70 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://free-png.ru/wp-content/uploads/2020/10/drako225-09f042e9.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+button
+{
+    padding: 7px 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 0, 93);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.modal
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 0;
+    transition: .7s;
+    background-image: url("https://121clicks.com/wp-content/uploads/2013/11/roeselien_raimond_01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.modal p
+{
+    margin-top: 50px;
+    display: inline-block;
+    padding: 20px 50px;
+    background-color: coral;
+    color: #fff;
+    font-size: 32px;
+    border-radius: 10px;
+    transition: 1s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal.active{
+    height: 100vh;
+}
+
+.modal.active p{
+    visibility: visible;
+    opacity: 1;
+}
